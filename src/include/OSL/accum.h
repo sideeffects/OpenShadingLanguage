@@ -140,6 +140,12 @@ public:
         return m_dfoptautomata.getRules(state, count);
     };
 
+    /// SideFX.
+    const DfOptimizedAutomata& dfa() const
+    {
+	return m_dfoptautomata;
+    }
+
 private:
     // Compiled lpexp's we save while creating the rules with addRule.
     // It gets nuked after you call compile()
